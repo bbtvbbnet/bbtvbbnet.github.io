@@ -1,0 +1,169 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="apple-touch-icon" href="image/favicon.ico" />
+  <link rel="icon" type="image/x-icon" href="image/favicon.ico" />
+  <link rel="shortcut icon" type="image/x-icon" href="image/favicon.ico" />
+  <link rel="bookmark" type="image/x-icon" href="image/favicon.ico" />
+
+  <title>bb</title>
+
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.3.1.js" type="text/javascript"></script>
+  <script src="js/bootstrap.bundle.js"></script>
+</head>
+<script>
+  //錨點平滑滾動效果
+  $(function () {
+    var win_W		 = $(window).width();			//螢幕寬度
+    var anchorLink = document.querySelector("a[href='#top']"),
+    target = document.getElementById("top");
+    anchorLink.addEventListener("click", function(e) {
+        if (window.scrollTo) {
+            e.preventDefault();
+            window.scrollTo({"behavior": "smooth", "top": target.offsetTop});
+        }
+    })
+    reset(win_W);
+  });
+  function reset(win_W){
+    if(win_W>768){
+      $("#block01_01").show();
+      $("#block01_02").hide();
+    }else{
+      $("#block01_01").hide();
+      $("#block01_02").show();
+    }
+  }
+  window.onresize = function(){
+    var win_W		 = $(window).width();			//螢幕寬度
+    reset(win_W);
+  }
+</script>
+
+<body>
+
+  <div class="d-flex flex-column flex-md-row align-items-center p-2 px-md-4 bg-white border-bottom shadow-sm" id="top">
+    <h5 class="my-0 mr-md-auto font-weight-normal">
+      <a class="" href="#">
+        <img src="image/logo01.jpg">
+      </a>
+    </h5>
+    <nav class="my-2 my-md-0 mr-md-3">
+      <a class="p-2 text-dark" href="#service">服務範圍</a>
+      <a class="p-2 text-dark" href="#program">方案介紹</a>
+      <a class="p-2 text-dark" href="#contact">專人服務申請</a>
+    </nav>
+  </div>
+  <div id="block01_01">
+    <img src="image/21.png" width="100%" height="auto">
+  </div>
+  <div id="block01_02">
+    <img src="image/84.png" width="100%" height="auto">
+  </div>
+  <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center" id="service">
+    <img src="image/投影片1.png" width="80%" height="auto" id="pic01">
+  </div>
+
+  <main role="main">
+
+    <div class="container marketing">
+    </div><!-- /.container -->
+
+    <div style="background-color: #c7e4d2;">
+      <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center" id="program">
+        <h1 class="display-5">各種方案為您量身打造</h1>
+      </div>
+      <div class="card-deck text-center">
+        <div class="card  shadow-sm">
+          <div class="card-body">
+            <img src="image/投影片2.png" width="100%" height="auto">
+          </div>
+        </div>
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <img src="image/投影片3.png" width="100%" height="auto">
+          </div>
+        </div>
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <img src="image/投影片4.png" width="100%" height="auto">
+          </div>
+        </div>
+      </div>
+      <div class="card-deck text-center">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <img src="image/投影片5.png" width="100%" height="auto">
+          </div>
+        </div>
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <img src="image/投影片6.png" width="100%" height="auto">
+          </div>
+        </div>
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <img src="image/投影片7.png" width="100%" height="auto">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pricing-header px-3 py-3 pb-md-1 mx-auto text-center" style="background-color: #bed6e2;">
+      <h1 class="display-5"> 單裝網路也可來電洽詢優惠</h1>
+    </div>
+    <div>
+      <img src="image/46.png" width="100%" height="auto">
+    </div>
+
+    <div class="pricing-header px-3 py-3 pb-md-1 mx-auto text-center" style="color:white ; background-color: #e7207b;">
+      <h1 class="display-5"> 獨家好康</h1>
+    </div>
+    <div>
+      <img src="image/77.png" width="100%" height="auto">
+    </div>
+    
+  </main>
+  <div class="footer" id="contact">
+
+    <div class="right_bottom">
+      <a href="https://line.me/ti/p/R88d2Ja0pm" target="_blank"><img src="image/line_icon.png" width="60"></a>
+      <a href="tel:0958504051"><img src="image/tel_icon.png" width="60" style="padding-top: 10px;"></a>
+      <div class="top_button"> 
+        <a href="#top"></a>
+    </div>
+    </div>
+
+
+    <footer class="container py-5">
+      <div class="row">
+        <div class="col-12 col-md">
+          <h5>聯絡資訊</h5>
+          <ul class="list-unstyled text-small" style="line-height: 2.5;">
+            <li><a class="text-muted02" href="tel:0958504051" target="_blank">申辦專線：0958-504-051</a></li>
+            <li><a class="text-muted02" href="https://line.me/ti/p/R88d2Ja0pm">LINE ID：a125555561</a></li>
+            <li><a class="text-muted02" href="mailto:a125555561@gmail.com" target="_blank">E-mail：a125555561@gmail.com</a></li>
+          </ul>
+        </div>
+        <div class="col-ㄅ col-md">
+          <h5>掃描LINE諮詢</h5>
+          <ul class="list-unstyled text-small">
+            <li>
+              <img src="image/line_qrcode.jpg" width="200">
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>
